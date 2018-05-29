@@ -2,7 +2,7 @@
 
 ## Introduction to Today's Workshop
 
-<b> Objective </b>: Making a functional Line following Robot by using a Raspberry Pi.<br/>
+<b> Objective </b>: Create a robot rover to follow a fixed path using Raspberry Pi.<br/>
 
 The rover starts from its initial point; while going through the line map (insulated black line), the detection sensors on the rover continuously check for any changes while moving along the map. If the rover goes off course, the detection sensors accumulates this data and creates an appropriate response, thereby regulating its current path. This is further explained in the figure below. <br/>
 
