@@ -53,6 +53,13 @@ pigpio is a library for the Raspberry which allows control of the General Purpos
 ```make```<br/>
 ```sudo make install```<br/>
 
+**Note**  
+Before running a python script that contains the pigpio library, on the terminal type: <br/>
+ ```sudo pigpiod``` <br/>
+this is done so that pigpio library runs in the background <br/>
+
+```sudo enterpythonfilename.py```<br/>
+
 *For more information about the library follow this link*: **http://abyz.me.uk/rpi/pigpio/** 
 
 ### Setting up the program to run on terminal, after boot
