@@ -1,4 +1,4 @@
-# importing the pigpio library to enable all 
+# importing the pigpio library to enable all.... 
 import pigpio                   
 
 # time library used to extract the sleep function in order to use delays
@@ -15,7 +15,7 @@ pi.set_mode(irs2, pigpio.INPUT)
 
 while True:
     print("IR Sensor 1: ")
-    print(pi.read(irs1)
+    print(pi.read(irs1))
     print("IR Sensor 2: ")
     print(pi.read(irs2))
     sleep(0.5)
