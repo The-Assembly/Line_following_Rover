@@ -19,7 +19,7 @@ pi.set_mode(in4,pigpio.OUTPUT)
 
 
 def forwards():
-    pi.set_PWM_dutycycle(ena, 70)
+    pi.set_PWM_dutycycle(ena, 70) 
     pi.write(in1, 1)
     pi.write(in2, 0)
     pi.set_PWM_dutycycle(enb, 70)
@@ -40,8 +40,8 @@ def backwards():
 
 def right():
     pi.set_PWM_dutycycle(ena, 70)
-    pi.write(in1, 1)
-    pi.write(in2, 1)
+    pi.write(in1, 0)
+    pi.write(in2, 0)
     pi.set_PWM_dutycycle(enb, 70)
     pi.write(in3, 1)
     pi.write(in4, 0)
@@ -53,8 +53,8 @@ def left():
     pi.write(in1, 1)
     pi.write(in2, 0)
     pi.set_PWM_dutycycle(enb, 70)
-    pi.write(in3, 1)
-    pi.write(in4, 1)
+    pi.write(in3, 0)
+    pi.write(in4, 0)
     print("left")
 
 
