@@ -43,8 +43,8 @@ def backwards():
 
 def right():
     pi.set_PWM_dutycycle(ena, 55)
-    pi.write(in1, 1)
-    pi.write(in2, 1)
+    pi.write(in1, 0)
+    pi.write(in2, 0)
     pi.set_PWM_dutycycle(enb, 55)
     pi.write(in3, 1)
     pi.write(in4, 0)
@@ -56,8 +56,8 @@ def left():
     pi.write(in1, 1)
     pi.write(in2, 0)
     pi.set_PWM_dutycycle(enb, 55)
-    pi.write(in3, 1)
-    pi.write(in4, 1)
+    pi.write(in3, 0)
+    pi.write(in4, 0)
     print("left")
 
 
@@ -71,19 +71,19 @@ def stop():
     print("nothing")
 
 while True:
-    #both while move forward
-    if(pi.read(irs1)==False and pi.read(irs2)==False): #both while move forward
+    #move forward
+    if(pi.read(irs1)==False and pi.read(irs2)==False): 
         forwards()
 
     #turn right
-    elif(pi.read(irs1)==True and pi.read(irs2)==False): #both while move forward
+    elif(pi.read(irs1)==True and pi.read(irs2)==False): 
         right()
 
     #LEFT
-    elif(pi.read(irs1)==False and pi.read(irs2)==True): #both while move forward
+    elif(pi.read(irs1)==False and pi.read(irs2)==True): 
         left()
-
-    elif(pi.read(irs1)==True and pi.read(irs2)==True): #both while move forward
+    #stop
+    elif(pi.read(irs1)==True and pi.read(irs2)==True): 
         stop()
 
 pigpio.cleanup()
