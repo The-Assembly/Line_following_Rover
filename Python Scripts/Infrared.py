@@ -5,8 +5,8 @@ import pigpio
 from time import time,sleep     
 
 #defining variables that holds a corresponding GPIO pinout 
-irs1 = 4  #Infrared Sensor 1
-irs2 = 17 #Infrared Sensor 2
+irs1 = 16  #Infrared Sensor 1
+irs2 = 20 #Infrared Sensor 2
 
 # pigpio.pi class gives access to a specified Pi's GPIO
 pi = pigpio.pi()    
