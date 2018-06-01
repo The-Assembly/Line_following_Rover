@@ -1,9 +1,10 @@
-# importing the pigpio library to enable all.... 
+# importing the pigpio  
 import pigpio                   
 
 # time library used to extract the sleep function in order to use delays
 from time import time,sleep     
 
+#defining variables that holds a corresponding GPIO pinout 
 irs1 = 4  #Infrared Sensor 1
 irs2 = 17 #Infrared Sensor 2
 
