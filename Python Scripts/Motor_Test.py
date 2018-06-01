@@ -5,12 +5,12 @@ import pigpio
 from time import time,sleep
 
 #defining variables that holds a corresponding GPIO pinout 
-ena = 11 #Enable A
-in1 = 9 #Input 1
-in2 = 10 #Input 2
-enb = 26 #Enable B
-in3 = 19 #Input 3
-in4 = 13 #Input 4
+ena = 17 #Enable A
+in1 = 27 #Input 1
+in2 = 22 #Input 2
+enb = 10 #Enable B
+in3 = 9 #Input 3
+in4 = 11 #Input 4
 
 # pigpio.pi class gives access to a specified Pi's GPIO
 pi = pigpio.pi()
