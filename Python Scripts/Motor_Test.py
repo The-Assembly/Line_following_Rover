@@ -8,9 +8,9 @@ from time import time,sleep
 ena = 17 #Enable A
 in1 = 27 #Input 1
 in2 = 22 #Input 2
-enb = 10 #Enable B
-in3 = 9 #Input 3
-in4 = 11 #Input 4
+in3 = 10 #Input 3
+in4 = 9 #Input 4
+enb = 11 #Enable B
 
 # pigpio.pi class gives access to a specified Pi's GPIO
 pi = pigpio.pi()
