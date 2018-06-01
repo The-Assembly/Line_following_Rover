@@ -7,15 +7,17 @@ from time import time,sleep
 irs1 = 4  #Infrared Sensor 1
 irs2 = 17 #Infrared Sensor 2
 
-pi = pigpio.pi()  # initialising the library 
+# pigpio.pi class gives access to a specified Pi's GPIO
+pi = pigpio.pi()    
 
-#Setting IR sensor as input, thereby providing sensor data through the GPIO pins
+#Setting GPIO mode to input, to access read mode 
 pi.set_mode(irs1, pigpio.INPUT) 
 pi.set_mode(irs2, pigpio.INPUT)
 
+
 while True:
     print("IR Sensor 1: ")
-    print(pi.read(irs1))
+    print(pi.read(irs1)) #Returns the GPIO level (1-> True, 0-> False)
     print("IR Sensor 2: ")
     print(pi.read(irs2))
-    sleep(0.5)
+    sleep(0.5) # a delay of 0.5 seconds before starting the next iteration
