@@ -87,16 +87,12 @@ while True:
     if(pi.read(irs1)==False and pi.read(irs2)==False): 
         forwards()
 
-    #turn right
-    elif(pi.read(irs1)==True and pi.read(irs2)==False): 
-        right()
+    #########turn right##########
 
-    #LEFT
-    elif(pi.read(irs1)==False and pi.read(irs2)==True): 
-        left()
-    #stop
-    elif(pi.read(irs1)==True and pi.read(irs2)==True): 
-        stop()
+    #########turn left##########
+
+    #########stop##########
+
 
 
 
